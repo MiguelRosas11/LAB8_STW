@@ -53,7 +53,7 @@ Repository links:
 
 | Project | Repository |
 |--------|------------|
-| LAB2_STW | https://github.com/MiguelRosas11/LAB2_STW |
+| LAB2_STW | https://github.com/MiguelRosas11/Lab_2_STW |
 | LAB4_STW | https://github.com/MiguelRosas11/LAB4_STW |
 | Proyecto1_STW | https://github.com/MiguelRosas11/Proyecto1_STW |
 | LAB_REPOSICION_STW | https://github.com/MiguelRosas11/LAB_REPOSICION_STW |
