@@ -1,107 +1,142 @@
-# Lab8 Portfolio
+# LAB8 - Personal Portfolio with Next.js
 
-Portafolio web personal de Jose Miguel Rosas Guerra para el Laboratorio 8 de Sistemas y Tecnologias Web. El sitio presenta perfil, habilidades, proyectos del curso, enlaces a repositorios y espacios preparados para capturas.
+This project was developed for the course **Tecnologias y Sistemas Web** and corresponds to **Laboratory 8**.
 
-## Tecnologias
+The objective of this laboratory was to build a public personal portfolio using **Next.js**, **React**, and **TypeScript**, with a clean structure, responsive design, project pages, repository links, and screenshot galleries for course projects.
 
-- Next.js
-- React
-- TypeScript
-- CSS moderno
-- Lucide React
-- Vercel
+The portfolio presents the academic profile of **Jose Miguel Rosas Guerra**, selected laboratories, both course projects, contact links, and a layout prepared for deployment on **Vercel**.
 
-## Estructura
+---
 
-```txt
-src/
-  app/
-    about/page.tsx
-    contact/page.tsx
-    projects/page.tsx
-    projects/[slug]/page.tsx
-    layout.tsx
-    page.tsx
-  components/
-  data/projects.ts
-public/
-  assets/
-```
+## Project Description
 
-## Instalacion
+This application allows visitors to:
 
-```bash
-npm install
-```
+- View a professional landing page with student information
+- Learn about the student's academic profile and web development interests
+- Explore selected laboratories and projects from the course
+- Open individual detail pages for each project
+- View technologies used in every project
+- Open repository links from GitHub
+- Contact the student through email, GitHub, or LinkedIn
+- Browse project screenshots inside a clean gallery layout
 
-## Ejecucion local
+The project is organized with reusable components and centralized project data.
 
-```bash
-npm run dev
-```
+---
 
-Abre `http://localhost:3000`.
+## Portfolio Structure
 
-## Build
+The application includes the following routes:
 
-```bash
-npm run build
-```
+| Route | Description |
+|------|-------------|
+| `/` | Home page with profile summary and featured projects |
+| `/about` | About page with academic background and skills |
+| `/projects` | Project listing page |
+| `/projects/[slug]` | Individual page for each project |
+| `/contact` | Contact page with links and visual contact form |
 
-## Deployment en Vercel
+---
 
-1. Sube el repositorio a GitHub.
-2. Entra a Vercel y crea un nuevo proyecto desde el repositorio.
-3. Usa la configuracion por defecto de Next.js.
-4. Ejecuta el deploy.
+## Projects Included
 
-No se inventaron URLs de deployment. Los campos `liveUrl` quedan como `null` para agregarlos despues.
+The portfolio includes:
 
-## Proyectos incluidos
+- **LAB2_STW** - Interactive story styled with CSS
+- **LAB4_STW** - Habit and mission tracker with XP progress
+- **Proyecto1_STW** - Blog-style web app with API consumption
+- **LAB_REPOSICION_STW** - Store simulation with React, Vite, and Next.js
+- **Not-Balatro** - Interactive web project inspired by a card game experience
 
-- LAB2_STW: https://github.com/MiguelRosas11/LAB2_STW
-- LAB4_STW: https://github.com/MiguelRosas11/LAB4_STW
-- Proyecto1_STW: https://github.com/MiguelRosas11/Proyecto1_STW
-- LAB_REPOSICION_STW: https://github.com/MiguelRosas11/LAB_REPOSICION_STW
-- Not-Balatro: https://github.com/MiguelRosas11/Not-Balatro
+Repository links:
 
-Proyecto1_STW menciona que deriva de una practica previa de mini blog con APIs, pero esa practica no se incluye como proyecto independiente.
+| Project | Repository |
+|--------|------------|
+| LAB2_STW | https://github.com/MiguelRosas11/LAB2_STW |
+| LAB4_STW | https://github.com/MiguelRosas11/LAB4_STW |
+| Proyecto1_STW | https://github.com/MiguelRosas11/Proyecto1_STW |
+| LAB_REPOSICION_STW | https://github.com/MiguelRosas11/LAB_REPOSICION_STW |
+| Not-Balatro | https://github.com/MiguelRosas11/Not-Balatro |
 
-## Capturas necesarias
+Important note:
 
-Coloca las imagenes dentro de `public/assets`. Si una imagen falta, el portafolio muestra un placeholder con la ruta esperada.
+- Proyecto1_STW mentions that it comes from a previous mini blog practice with APIs.
+- That previous practice is not included as a separate project in this portfolio.
+
+---
+
+## Features Implemented
+
+The following features were implemented:
+
+- Next.js App Router structure
+- Responsive layout for desktop, tablet, and mobile
+- Dark, minimal, professional visual style
+- Reusable UI components
+- Centralized project data in `src/data/projects.ts`
+- Dynamic project detail pages using `/projects/[slug]`
+- Project cards with descriptions, technologies, images, and repository links
+- Image gallery for every project
+- Clean placeholder fallback when an image is missing
+- Contact page with email, GitHub, LinkedIn, and visual form
+- Metadata prepared for deployment
+- Build ready for Vercel
+
+---
+
+## Visual Features Implemented
+
+The following UI/UX features were implemented:
+
+- Dark background with subtle grid texture
+- Clear navigation bar
+- Large home hero section with academic profile
+- Profile information panel styled like a technical card
+- Soft hover states and microinteractions
+- Rounded project cards with image sections
+- Technology badges for quick scanning
+- Responsive grids for project listings and galleries
+- Mobile navigation adjusted to avoid horizontal overflow
+- Consistent spacing, typography, and color accents
+
+---
+
+## Screenshot Requirements
+
+Images must be placed inside `public/assets`.
 
 ### LAB2_STW
 
-Cantidad: 2 capturas
+Quantity: 2 screenshots
 
 ```txt
 public/assets/LAB2_STW/LAB2_STW1.png
 public/assets/LAB2_STW/LAB2_STW2.png
 ```
 
-Capturas sugeridas:
+Suggested screenshots:
 
-1. Pantalla de inicio de la historia.
-2. Pantalla de una decision intermedia o final.
+1. Story start screen
+2. Intermediate decision screen or ending screen
 
 ### LAB4_STW
 
-Cantidad: 2 capturas
+Quantity: 2 screenshots
 
 ```txt
 public/assets/LAB4_STW/LAB4_STW1.png
 public/assets/LAB4_STW/LAB4_STW2.png
 ```
 
-Capturas sugeridas:
+Suggested screenshots:
 
-1. Vista principal con formulario y lista de misiones.
-2. Vista mostrando misiones completadas, XP global y rango.
+1. Main view with form and mission list
+2. View showing completed missions, global XP, and rank
 
 ### Proyecto1_STW
 
-Cantidad: 4 capturas
+Quantity: 4 screenshots
 
 ```txt
 public/assets/Proyecto1_STW/Proyecto1_STW1.png
@@ -110,16 +145,16 @@ public/assets/Proyecto1_STW/Proyecto1_STW3.png
 public/assets/Proyecto1_STW/Proyecto1_STW4.png
 ```
 
-Capturas sugeridas:
+Suggested screenshots:
 
-1. Home o listado principal de publicaciones.
-2. Vista de detalle de una publicacion.
-3. Vista de busqueda o filtros.
-4. Formulario de creacion o edicion de publicacion.
+1. Main post listing
+2. Post detail view
+3. Search or filter view
+4. Create or edit post form
 
 ### LAB_REPOSICION_STW
 
-Cantidad: 5 capturas
+Quantity: 5 screenshots
 
 ```txt
 public/assets/LAB_REPOSICION_STW/LAB_REPOSICION_STW1.png
@@ -129,17 +164,17 @@ public/assets/LAB_REPOSICION_STW/LAB_REPOSICION_STW4.png
 public/assets/LAB_REPOSICION_STW/LAB_REPOSICION_STW5.png
 ```
 
-Capturas sugeridas:
+Suggested screenshots:
 
-1. Catalogo principal de productos.
-2. Carrito de compras con productos agregados.
-3. Filtros, busqueda u ordenamiento aplicados.
-4. Formulario de checkout o resumen de compra.
-5. Landing secundaria en Next.js.
+1. Main product catalog
+2. Shopping cart with products
+3. Search, filter, or sorting view
+4. Checkout form or purchase summary
+5. Secondary landing page in Next.js
 
 ### Not-Balatro
 
-Cantidad: 3 capturas
+Quantity: 3 screenshots
 
 ```txt
 public/assets/Not-Balatro/Not-Balatro1.png
@@ -147,16 +182,132 @@ public/assets/Not-Balatro/Not-Balatro2.png
 public/assets/Not-Balatro/Not-Balatro3.png
 ```
 
-Capturas sugeridas:
+Suggested screenshots:
 
-1. Pantalla principal.
-2. Vista de interaccion o partida.
-3. Vista de resultado, estado avanzado o seccion relevante del juego.
+1. Main screen
+2. Interaction or gameplay view
+3. Result, advanced state, or relevant game section
 
-Total recomendado: 16 capturas.
+Total recommended: **16 screenshots**.
 
-## Enlaces principales
+---
 
+## Project File Structure
+
+```txt
+src/
+  app/
+    about/page.tsx
+    contact/page.tsx
+    projects/page.tsx
+    projects/[slug]/page.tsx
+    globals.css
+    layout.tsx
+    page.tsx
+  components/
+    Button.tsx
+    ContactCard.tsx
+    Footer.tsx
+    Navbar.tsx
+    ProjectCard.tsx
+    ProjectGallery.tsx
+    ProjectImage.tsx
+    SectionTitle.tsx
+    TechBadge.tsx
+  data/
+    projects.ts
+public/
+  assets/
+```
+
+---
+
+## How to Run Locally
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/MiguelRosas11/LAB8_STW.git
+```
+
+2. Navigate to the project folder:
+
+```bash
+cd LAB8_STW
+```
+
+3. Install dependencies:
+
+```bash
+npm install
+```
+
+4. Start the development server:
+
+```bash
+npm run dev
+```
+
+5. Open the application in your browser:
+
+```txt
+http://localhost:3000
+```
+
+---
+
+## Build
+
+To generate a production build:
+
+```bash
+npm run build
+```
+
+To run the production version locally:
+
+```bash
+npm run start
+```
+
+---
+
+## Deployment
+
+This project is prepared for deployment on **Vercel**.
+
+Recommended Vercel settings:
+
+| Setting | Value |
+|--------|-------|
+| Framework Preset | Next.js |
+| Install Command | npm install |
+| Build Command | npm run build |
+| Output Directory | Leave empty |
+
+No environment variables are required.
+
+---
+
+## Technologies Used
+
+- Next.js
+- React
+- TypeScript
+- CSS
+- Lucide React
+- Git
+- GitHub
+- Vercel
+
+---
+
+## Author
+
+- Student: Jose Miguel Rosas Guerra - 241274
+- Course: Tecnologias y Sistemas Web
+- University: Universidad del Valle de Guatemala
+- Year: 2026
 - GitHub: https://github.com/MiguelRosas11
 - LinkedIn: https://www.linkedin.com/in/miguel-rosas-502489380/?skipRedirect=true
-- Correo: roguemijose@gmail.com
+- Email: roguemijose@gmail.com
